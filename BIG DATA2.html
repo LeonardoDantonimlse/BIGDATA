@@ -6,20 +6,65 @@
 <title>I BIG DATA</title>
 
 <style type="text/css" media="all">
-body{
-	    background: #353535;
-	    font-family: Roboto, sans-serif;
-	    margin: 0;
-		padding: 0;
-		perspective: 1px;
-		transform-style: preserve-3d;
-		height: 100%;
+	html {
 		overflow-y: scroll;
-		overflow-x: scroll;
-			}
+		overflow-x: none;
+		margin:0px;
+	}
+
+	body{
+		margin: 0px;
+		background: #353535;
+	    font-family: Roboto, sans-serif;
+		overflow-y: none;
+		overflow-x: none;
+	}
+
+	header{
+		padding: 10vh 0 8vh;
+		position: relative;
+		width: 100%;
+	}
+
+	header h1{
+		color: #fff;
+	}
+	h1{
+		text-align: center;
+		font-size: 20px;
+	}
+	p{
+		text-align: justify;
+	}
+
+	header p{
+		color:#fff;
+	}
+
+	header * {
+		letter-spacing: 0.3em;
+		text-align: center;
+		margin: 10px;
+		position: relative;
+		padding: 50px;
+	}
+	
+	
+	
+	
+	.store__header-arrow-wrap{
+	height: 200px;
+		}
+
+		.about-text {
+	height: 80px;
+	text-align: center;
+
+		}
+	
+	
 	.nav {
 		width: 100%;
-		height: 500px;
 		}
 
 .navbar{
@@ -29,7 +74,7 @@ body{
 
 
 .nav-head {
-    position: relative;
+    display: none;
     background: #fa783e; /*Old browsers*/
 background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);  /*FF3.6-15*/
 background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%); /* Chrome10-15, Safari5.1-6*/
@@ -38,22 +83,389 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa782e' ,
 endColorstr='c82930' ,GradientType=1); /* IE6-9 fallback on horizontal gradient*/
 border-radius: 25px 25px 0 0;
 box-shadow: 0px 15px 30px 3px rgba(0,0,0,0.2);
-
 }
 	.nav-logo{
+	display: none;
+}
+	.citazione{
+		display: none;
+	}
+		.nav-body {
+	height: 20vw;
+	background: #fff;
+	border-radius: 0 0 25px 25px;
+			}
+	.nav-text{
+	display: inline-block;
+	font-size: 14vw;
+	font-weight: 900;
+	margin-top: 2vw;
+	margin-left: 10px;
+	opacity: 0.2;
+			}
+	
+	.bg{
+	margin-top: 0;
+	width:100%;
+	text-align: center;
+	padding: 10px;
+	background-image: url(https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/bigdata2.jpg);
+	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+			}
+	
+	.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+	
+	
+	.contnent-container{
+	height: 300wh;
+	background: #fff;
+	border-radius:35px;
+	box-shadow: -20px 20px 15px -10px rgba(0,0,0,0.3);
+	margin:0 10px;
+			}
+	.articolo{
+		padding: 10px;
+	}
+	
+	img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+		width: 100%;
+}
+	
+	.fonti{
+		padding: 10px;
+		color: #fff;
+	}
+	.autori{
+		padding: 10px;
+		color: #fff;
+		margin: auto;
+	}
+	
+	.fine{
+		height:70vh;
+	background: #000;
+	border-radius: 0 0 25px 25px;
+	
+	}
+a:link {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #F46F2E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #F46F2E;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #CCCCCC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+	table{
+		text-align: left;
+	}
+	
+@media only screen and (min-width: 430px){
+	.nav-logo{
+	display: block;
+	position: absolute;
+		top:13px;
+		left: 10px;
+    width:5vw;
+	max-width: 50px;
+		}
+	.citazione{
+		display: inline;
+		position: absolute;
+		margin: 10px;
+		padding-left: 6vw;
+		padding-right: 20px;
+		color: #FFF;
+		font-size: 2vw;
+	}
+	.citante{
+		display: inline;
+		position: absolute;
+		margin: 10px;
+		padding-top: 8vw;
+		padding-left: 6vw;
+		padding-right: 20px;
+		color: #FFF;
+		opacity: 0.7;
+		font-size: 1vw;
+	}
+.nav-head {
+display: block;
+height: 20vw;
+max-height: 200px;
+background: #fa783e; /*Old browsers*/
+background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);  /*FF3.6-15*/
+background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%); /* Chrome10-15, Safari5.1-6*/
+background: linear-gradient(13deg, #fa782e 8%, #c82930 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari 7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa782e' ,
+endColorstr='c82930' ,GradientType=1); /* IE6-9 fallback on horizontal gradient*/
+border-radius: 25px 25px 0 0;
+box-shadow: 0px 15px 30px 3px rgba(0,0,0,0.2);
 
-    width:10%;
-	max-width: 40px;
-    margin-left:15px;
-	margin-top: 15px;
+	}
+	
+	
+		img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+		width: 50%;
+}
+	
+
+	}
+	
 }
 </style>
 </head>
 
 <body>
+<nav>
 <div class="nav">
 	<div class="navbar">
-<div class="nav-head">
-	<img src="file:///DATI/BIGDATA/DISK.png" class="nav-logo"/>
+		<div class="nav-head">
+			<img src="https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/DISK.png" class="nav-logo"/>
+				<div class="nav-detail" >
+  <h4 class="citazione">
+“Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it…”
+</h4>
+<h6 class="citante">
+- Dan Ariely,
+Center for Advanced Hindsight
+Duke University
+</h6>
+</div>
+</div>
+
+
+	<div class="nav-body">
+	<span class="nav-text">
+	I BIG DATA
+	</span>
+	</div>
+    </div>
+    </div>
+		</nav>
+
+<div class="bg">
+<div>
+<header>
+<h1>Ciò che avvieme senza che te ne accorgi</h1>
+  <p>
+	 La tua identità è online
+	</p>
+</header>
+</div>
+<div>
+	
+</div>
+</div>
+<div class="contnent-container"> <!--contents*-->
+
+<div class="articolo">
+
+<h1> <b>BIG DATA E COMUNICAZIONE</b> </h1>
+	<br> 
+</h1>
+<p>
+ 	<li><b>STORIA</b></li> 
+ 	<br>
+ 	Si scrive Big Data e si legge come una delle evoluzioni più profonde e pervasive del mondo digitale. Un trend destinato a rimanere e a incidere profondamente sulla nostra vita e sul nostro modo di fare business. <br> Per definire cosa sono i Big Data pensiamo un attimo al nostro quotidiano: interazioni sui social network, un click su un sito web, i nostri smartphone interconnessi. La maggior parte di noi vive quotidianamente con questi strumenti e si interfaccia con loro più di quanto si possa pensare: questo non può non incidere sul modo in cui comunichiamo. Tutto ciò genera una mole di dati incredibilmente più elevata di qualche decennio fa. Enormi volumi di dati eterogenei per fonte e formato, analizzabili in tempo reale: tutto questo sono i Big Data. <br> Il termine "Big Data" si riferisce a dati informatici grandi, veloci o complessi, difficili o impossibili da elaborare con i metodi tradizionali. L'accesso e la memorizzazione di grandi quantità di informazioni su cui effettuare analisi sono attività disponibili da molto tempo, ma il concetto di Big data ha acquisito uno slancio solo all'inizio degli anni 2000, quando l'analista di mercato Doug Laney ha articolato l'attuale definizione di big data come "le tre V":
+ 	<br>
+ 	<br>
+ 	<b>Volume: </b> 
+ 	le organizzazioni raccolgono dati da diverse fonti, tra cui transazioni commerciali, dispositivi intelligenti (IoT), apparecchiature industriali, video, social media e altro ancora. In passato i costi relativi all'archiviazione sarebbero stati un problema, ma oggi è decisamente più accessibile, grazie a piattaforme come i data lakes e Hadoop.
+ 	<br>
+ 	<br>
+ 	<b>Velocità: </b>
+ 	con la crescita dell'Internet delle Cose, i flussi di dati verso le imprese devono essere gestiti in modo tempestivo e a una velocità senza precedenti. Tag RFID, sensori e contatori intelligenti hanno portato alla necessità di gestire questi fiumi di dati in tempo quasi reale.
+ 	<br>
+ 	<br>
+	<b>Varietà: </b>
+	I dati sono disponibili in tutti i tipi di formati, dai dati strutturati e numerici nei database tradizionali, ai documenti di testo non strutturati, e-mail, video, audio, dati di stock e transazioni finanziarie.
+	<br>
+	<br>
+	È necessario considerare due dimensioni aggiuntive quando si tratta di Big data:
+	<br>
+	<br>
+	<b>Variabilità: </b>
+	Oltre a crescere in velocità e varietà, i flussi di dati sono imprevedibili, per cui cambiano spesso e variano di continuo. Sono la vera sfida per tutte quelle aziende che hanno bisogno di sapere quando qualcosa sta facendo tendenza sui social media e come gestire i picchi di dati giornalieri, quelli stagionali o basati sugli eventi.
+	<br>
+	<br>
+	<b>La Veridicità: </b>
+	Si riferisce alla qualità dei dati. Poiché i dati provengono da così tante fonti diverse, è difficile collegare, abbinare, pulire e trasformare i dati tra i sistemi. Le aziende hanno bisogno di collegare e correlare relazioni, gerarchie e collegamenti tra di essi. In caso contrario potrebbero andare rapidamente fuori controllo.
+	<br>
+	<br>
+	<a href="https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/IMG2.png">
+	<img src="https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/IMG2.png">
+	</a>
+	<br>
+	<br>
+	<li><b>PERCHE' SONO IMPORTANTI</b></li>
+	<br>
+	 L'importanza dei Big data non ruota intorno alla loro quantità ma al loro utilizzo. I Big data, per contare qualcosa, devono essere analizzati alla ricerca di informazioni di valore che portino a decisioni aziendali migliori e a mosse strategiche di business. Ma in che modo possono essere utili? <br>
+	 Ad esempio:
+	 <br>
+	 •	aiutando a capire le reazioni dei mercati e la percezione che questi hanno dei brand.
+	<br>
+	 •	identificando i fattori chiave che muovono le persone ad acquistare un certo servizio o un determinato prodotto.
+	<br>
+	 •	segmentando la popolazione per personalizzare quanto più possibile le strategie d’azione.
+	<br>
+	 •	abilitando nuove sperimentazioni consentite dalla disponibilità di dati inediti.
+	<br>
+	 •	guadagnando in predittività, grazie a uno storico di informazioni a talmente ampio raggio da consentire simulazioni molto più che verosimili.
+	<br>
+	<br>
+	<b>Conoscere le fonti</b> 
+	<br>
+	I dati in streaming sono i dati che provengono dall'Internet delle Cose (Internet of Things, IoT) e da altri dispositivi connessi, come gli indossabili (wearables), le auto intelligenti, i dispositivi medici, i sensori industriali e altri ancora. È possibile analizzare questi Big data man mano che confluiscono nei sistemi IT, decidendo quali dati conservare o meno, e quali devono essere ulteriormente analizzati. 
+	<br>
+	I dati dei social media provengono dalle interazioni su Facebook, YouTube, Instagram, ecc. Una vasta quantità di Big data che sotto forma di immagini, video, vocali, testo e audio, diventano utili per le funzioni di marketing, vendite e supporto. Questi dati sono spesso in forma non strutturata o semi strutturata e rappresentano quindi una sfida unica per la comprensione e successiva analisi. I dati pubblici disponibili provengono da numerose fonti di open data, come il portale Open Data Portal dell'Unione Europea. Altre tipologie di Big data possono provenire dai data lakes, fonti dati cloud, fornitori e clienti.
+	<br>
+	<br>
+	<li><b>I MEDIA DIGITALI</b></li>
+	<br>
+	<br>
+	I nuovi media, o media digitali, sono quei mezzi di comunicazione che utilizzano le (nuove) tecnologie per veicolare i loro messaggi, inoltre, hanno delle caratteristiche proprie che sono tipiche della loro natura e che non si possono, per definizione, trovare nei media classici (o tradizionali):
+	<br>
+	<b>Sono digitali: </b> il messaggio finale che noi leggiamo è originariamente una sequenza di "1" e di "0".
+	<br>
+	<b>Sono multimediali: </b> hanno quindi la capacità di portare in un unico supporto diverse tipologie di contenuto.
+	<br>
+	<b>Sono ipertestuali: </b> il messaggio (banner, ad esempio) tipicamente rimanda ad altri messaggi più complessi (sito web o landing page).
+	<br>
+	<b>Sono distribuiti: </b> mentre i media tradizionali sono tipicamente centralizzati e unidirezionali (one-to-one o one-to-many), i mezzi digitali sono distribuiti e decentrati consentendo una comunicazione "molti a molti" (many-to-many).
+	<br>
+	<b>Sono ipertargettizzabili: </b> esiste la possibilità di definire un target specifico e pianificare solo su di esso, tralasciando il resto dell'universo dell'audience.
+	<br>
+	<b>Sono interattivi: </b> da pubblico passivo la nostra audience può diventare attiva ed entrare in un processo di conversione che non solo è misurabile ma anche, spesso anche se non sempre, immediato. 
+	<br>
+	<b>Sono sociali: </b> lo sfruttamento di dinamiche socialmente digitali è uno dei trend del momento. La viralizzazione di contenuti brandizzati è difficilmente realizzabile in maniera organica ma c'è sempre dietro una campagna (spesso anche su media classici).
+	<br>
+	<b>Sono mobili: </b> questo punto definisce la "pervasività" dei media digitali mobili: lo smartphone è nelle tasche del 90% della popolazione italiana ed è di per sé un media a tutti gli effetti. In questo modo il target è potenzialmente sempre raggiungibile. Questo cambia e allo stesso complica parecchio le cose.
+	<br>
+	<br>
+	
+	<a href="https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/dati-2020.jpg">
+	<img src="https://raw.githubusercontent.com/LeonardoDantonimlse/BIGDATA/main/dati-2020.jpg">
+	</a>
+	
+	<br>
+	<br>
+	<li><b>L'IMPATTO DEI BIG DATA SULLA COMUNICAZIONE</b></li>
+	<br>
+	<br>
+Proviamo a capire come applicare i Big Data alla comunicazione. 
+<br>
+Qualcuno definisce il progresso tecnologico quel momento in cui una tecnologia, fino ad allora per pochi eletti, diventa disponibile a tutti: è sicuramente il percorso di smartphone e tablet che hanno nel bene e nel male rivoluzionato il nostro modo di vivere. Siamo eredi di un’epoca dove la comunicazione era concepita per dare a tutti lo stesso messaggio nello stesso modo, dove l’uniformità era il valore, presupponendo che l’interlocutore fosse un generico uomo, donna, o bambino i cui bisogni, desideri, interessi erano uniformi a quelli della propria categoria di appartenenza. Questa tipo di visione non corrisponde più alla realtà, la comunicazione non è più univoca e soprattutto non è più unidirezionale, ma è un processo condiviso e partecipato. 
+<br>
+Oggi, attraverso i Big Data, non solo si conoscono le caratteristiche di genere, ma anche i precisi momenti esperienziali e soprattutto il loro livello di ingaggio e gradimento rispetto a quello che noi stessi affermiamo. In una parola quanto abbiamo influito sulle scelte. La nostra vita interconnessa produce una enorme mole di dati che, se bene elaborati grazie ai Big data, possono permetterci di avere capacità predittive e analitiche nuove e di agire con maggiore consapevolezza. Un’opportunità preziosa, che tuttavia porta con sé anche il rischio di dispersione e frammentarietà dei messaggi. Dunque, una sfida sempre crescente per i comunicatori, a cui viene richiesto un maggiore sforzo di coerenza e consistenza dei contenuti, verso tutti gli stakeholders esterni e interni.
+<br>
+Fino a non molti anni fa, la comunicazione era intesa esclusivamente come una leva del marketing, oggi l’approccio è decisamente cambiato, le tre funzioni sono divenute la nervatura di una visione strategica che integra la dimensione economica, umana e sociale. Si è creato un nuovo equilibrio dove paradossalmente nell’era del digitale il fattore umano acquista maggiore rilevanza, proprio grazie ai nuovi strumenti che la tecnologia ci offre. Oggi le emozioni influenzano più dei fatti e l’ingaggio emotivo avviene sul piano dei valori e dell’identità.  
+<br>
+Ogni volta che un individuo è connesso alla rete lascia numerose “tracce”, che vengono cedute agli operatori sia in modo informato, sia, più spesso, inconsapevolmente. L’impronta digitale di ciascun individuo si compone di numerose informazioni, alcune delle quali direttamente associabili allo stesso (nome, cognome, età, ecc.), altre associabili alle attività svolte dagli individui (pagamenti, ricerche, ecc.), altre, infine, che pur non presentando legami diretti con l’individuo, attraverso il loro processamento, possono facilmente essere associate alle persone.
+<br>
+È cambiato, quindi, molto il nostro ruolo come consumatori nella comunicazione, perché abbiamo acquisito una consapevolezza di noi stessi e del nostro potere nei confronti dei Brand che prima non avevamo: i nostri interessi aumentano perché siamo in grado di sapere più cose, abbiamo accesso ad un mondo fantastico pieno di opportunità, di incontri, eventi, sport e non so cos'altro che prima non avevamo. Aumentando i nostri interessi, aumentano anche i nostri desideri: oggi ogni persona è un'entità complessa, che in momenti diversi di una stessa giornata presta attenzione selettiva ad alcuni argomenti piuttosto che altri, per poi tornare ad interessarsi ad altro ancora. Insomma, la comunicazione non è più nella forza del messaggio che parte in broadcast e arriva diretto, uniformato, uguale per tutti quanti. Questa è ormai la realtà, e come tale è parte di una strategia più ampia che parla ad ognuno di noi in maniera customizzata.
+<br>
+Ecco che, quindi, saltano fuori gli algoritmi che dopo aver “fatto conoscenza” con noi, ci forniscono dati che possono essere interessanti rispetto ad altri, selezionandoli fra il volume vertiginoso presente in rete e seguendo una logica che fa riferimento a scelte da noi compiute anche in altre occasioni. Non a caso gli algoritmi costituiscono le basi dell’intelligenza artificiale (AI) e sono fonte di argomentazioni etiche ed umane di importanza fondamentale.
+<br>
+L’uomo, quindi, sempre più al centro di questa scena, dovrà essere in grado di permettere alla tecnologia di svilupparsi, grazie anche ai Big data, in azioni autonome che allo stesso tempo, però, non costituiscano una “restrizione” dei nostri diritti e libertà.
+<br>
+<br>	
+<li><b>I BIG DATA E LA DEMOCRAZIA</b></li>
+Sebbene i big data non conferiscano di per sé potere di mercato, è vero che essi rendere le posizioni di mercato delle imprese che li controllano meno contendibili. Si pensi, ad esempio, al caso di un motore di ricerca che restituisce risultati sempre più accurati, rendendosi così sempre più appetibile e meno contestabile, al crescere della conoscenza che estrae dai dati dei suoi utenti. Così, se si considera che il potere di mercato delle piattaforme digitali è già schermato da altre barriere all’ingresso, allora si teme che le suddette imprese siano destinate a sopravvivere a generazioni e generazioni di esseri umani.
+<br>
+E proprio in relazione a quanto testé osservato, si paventa che famose multinazionali come Google, Amazon, Facebook, Apple e Microsoft, abbiano sia la forza per manovrare l’operato dei governi delle democrazie occidentali sia gli incentivi per diventare strumenti delle loro azioni, se del caso, repressive delle libertà individuali. Inoltre, se in generale si ritiene che la diseguaglianza economica attiri i differenti gruppi di interesse con l’effetto di inasprire gli scontri all’interno dei regimi democratici e di rendere più difficile il raggiungimento di soluzioni di sintesi, nello specifico non si manca di constatare come l’operato delle suddette piattaforme stia aumentando tale disuguaglianza, impoverendo i consumatori tramite termini contrattuali iniqui, producendo la precarizzazione del lavoro, e escludendo dal mercato le imprese obsolete. Infine, si sostiene che, offrendo informazioni direttamente al mercato, le menzionate piattaforme potrebbero subdolamente condizionare e manipolare l’opinione pubblica, influenzando le preferenze e i pensieri degli individui, non solo riguardo a ciò che essi potrebbero voler consumare, ma anche con riguardo a ciò che essi potrebbero votare. In questo solco si inscriverebbero, dunque, i fenomeni delle fake news e della “bolla del filtro” i quali produrrebbero due effetti: se, per un verso, creerebbero negli individui la sensazione di vivere in un mondo che rispecchia le loro convinzioni e i loro gusti, per altro verso farebbero perdere loro la consapevolezza delle altrui esigenze e dei diversi punti di vista. Questa seconda conseguenza, a sua volta, favorirebbe non solo l’attrazione la radicalizzazione delle opinioni degli individui, ma anche l’aumento di una sorta di incomunicabilità tra le opposte visioni del mondo, innescata proprio dal venir meno della consuetudine a confrontarsi; e ciò finirebbe per minare alla base il rispetto che gli individui dovrebbero avere per la democrazia come forma di governo che sopporta la dialettica per produrre una sintesi tra interessi legittimamente confliggenti. 
+<br>
+Da una parte, gli “individui-fonti di dati” possono trovarsi a condividere i propri dati personali di là da qualsiasi logica di mercato, ossia senza essere compiutamente coscienti del valore che gli stessi dati possono assumere per le imprese e per le pubbliche amministrazioni, nonché dei termini delle politiche di privacy. Inoltre, anche a causa di questa loro ridotta consapevolezza, oltre che in ragione del loro minore potere contrattuale nelle relazioni che li vedono opposti a imprese e istituzioni, questi “individui-fonti di dati” possono diventare oggetto di pratiche scorrette, ossia possono accettare di concludere dei contratti relativi al trasferimento dei loro dati che contengono clausole ingannevoli o vessatorie. Dall’altra, gli “individui-destinatari delle informazioni e dei beni” non solo possono non sapere di essere oggetto di profilazione, ma soprattutto possono risultare vittime di profilazioni “sbagliate”, perché guidate da criteri di poco conto, erronei, discriminatori, o volutamente pensati per individuare i soggetti più vulnerabili.
+<br>
+<br>
+</p>
+
+	
+</div>
+<div class="fine">
+<table width=100%, border-collapse=collapse>
+<tr border=none>
+<td>
+	<div class="fonti">
+		<p>FONTI:</p>
+		<li><a href="https://sgarbi.eu/big-data/">sgarbi</a></li>
+		<br>
+		<li><a href="https://www.fortuneita.com/2020/01/20/limpatto-dei-big-data-sulla-comunicazione/">fortuneita</a></li>
+		<br>
+		<li><a href="https://blog.ofg.it/cosa-sono-i-big-data-un-nuovo-approccio-alla-comunicazione">blog.ofg</a></li>
+		<br>
+		<li><a href="https://blog.ofg.it/digital-marketing-come-funzionano-i-media-digitali">blog.ofg</a></li>
+		<br>
+		<li><a href="https://www.logoutmedia.it/it/limpatto-dei-big-data-sulla-comunicazione/">logoutmedia</a></li>
+		<br>
+		<li><a href="https://www.treccani.it/magazine/diritto/approfondimenti/diritto_commerciale/I_big_data.html#:~:text=Sebbene%20i%20big%20data%20non,ben%20pi%C3%B9%20tradizionali%20%E2%80%93%20meno%20contendibili.">treccani</a></li>
+		<br>
+		</td>
+	<td>
+	<div class="fonti">
+	<p class="autori">
+	Andrea Alessi
+	<br>
+	Lorenzo Barbaro
+	<br>
+	Raffaele Cannizzo
+	<br>
+	Leonardo D'Antoni
+	<br>
+	Riccardo Lo Faro
+	<br>
+	Giulio Marchese
+	<br>
+	Enrico Puglisi
+	<br>
+	Giorgio Scamporrino
+	<br>
+	Gaia Schilirò Rubino
+	
+	</p>
+	</div>
+		
+	</td>
+		</tr>
+		
+		</table>
+	</div>
+	
+</div>
+
+
 </body>
 </html>
